@@ -22,16 +22,6 @@ app.get("/todos", async (req, res) => {
     res.json( await Todo.find());
 })
 
-app.post("/todo/new", async (req, res) => {})
-
-
-
-
-
-
-
-
-
-
-
-//n41N6w34tbKMc4bS
+app.listen(process.env.PORT, () => {
+    console.log(`Server started on port ${process.env.PORT}`);
+});
