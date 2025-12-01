@@ -22,7 +22,7 @@ app.get("/todos", async (req, res) => {
     res.json( await Todo.find());
 })
 
-//app.post("/todo/new", async (req, res) => {})
+app.post("/todo/new", async (req, res) => {})
 
 
 
