@@ -11,8 +11,8 @@ app.use(cors())
 app.use(express.json())
 
 mongoose.connect(process.env.MONGO_URI)
-.then(()=> console.log("DB connected"))
-.catch(()=> console.log(err))
+  .then(() => console.log("DB connected"))
+  .catch(err => console.error("DB connection error:", err))
 
 const Todo = mongoose.model("Todo", new mongoose.Schema({
     text: String
